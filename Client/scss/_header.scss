@@ -1,7 +1,13 @@
 header {
 	position: relative;
 	height: auto;
-	background-color: lightblue;
+	background-color: $default-background-color;
+	margin-bottom: 20px;
+	box-shadow: $header-shadow;
+
+	.container {
+		margin-bottom: 0;
+	}
 
 	.brand-name {
 		position: relative;
@@ -13,6 +19,7 @@ header {
 			float: left;
 			height: $header-height - 10;
 			width: auto;
+			margin: 5px 15px;
 		}
 
 		.title {
@@ -22,9 +29,25 @@ header {
 			line-height: $header-height;
 		}
 	}
+
 	nav {
 		position: relative;
 		float: right;
+		line-height: $header-height;
 
+		li {
+			float: left;
+		}
+
+		a {
+			&:hover {
+				background-color: $nav-hover;
+			}
+
+			display: block;
+			padding: 0 20px;
+			text-decoration: none;
+			color: $black-text
+		}
 	}
 }

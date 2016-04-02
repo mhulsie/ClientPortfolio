@@ -1,0 +1,24 @@
+main {
+	section {
+		position: relative;
+		width: 100%;
+		padding: 25px;
+		margin-bottom: 20px;
+		box-sizing: border-box;
+		background-color: $default-background-color;
+		box-shadow: $section-shadow;
+	}
+
+	.table {
+		display: table;
+	}
+
+	.row {
+		display: table-row;
+	}
+
+	.cell {
+		display: table-cell;
+		width: calc(100% / 3);
+	}
+}

@@ -1,37 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 <head>
     <meta charset="UTF-8">
     <title>Film Freak</title>
-    <link rel="stylesheet" href="index.css">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700|Raleway:400,700' rel='stylesheet' type='text/css'>
 </head>
 <body>
-    <header>
-        <img src="images/main_logo.png"/>
-        <div id="title">Film Freak</div>
+    <header class="clearfix">
+        <div class="container clearfix">
+            <div class="brand-name">
+                <img src="images/main_logo.png" alt="Site logo"/>
+                <div class="title">Film Freak</div>
+            </div>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="">Home</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
     </header>
-    <nav>
-        <a href="">Home</a>
-        <a   href="contact.html">Contact</a>
-    </nav>
-        <div id="container">
-            <section id="welcome">
-                <h1>Welkom</h1>
-                Welkom op deze website! Dit is het portfolio voor het vak Client Technology.<br>
-                Als thema heb ik gekozen voor film aangezien mijn interesse daar ligt. Ik kan erg genieten
-                van het
-            </section>
-            <section id="collection">
-                <h1>Collectie</h1>
-                Welkom op deze website! Dit is het portfolio voor het vak Client Technology.<br>
-                Als thema heb ik gekozen voor film aangezien mij
-            </section>
-            <section id="reviews">
-                <h1>Reviews</h1>
-                Welkom op deze website! Dit is het portfolio voor het vak Client Technology.<br>
-                Als thema heb ik gekozen voor film aangezien mijn interesse daar ligt. Ik kan erg genieten
-                van het
-            </section>
-    </div>
+    <main>
+        <div class="container clearfix table">
+            <div class="row">
+                <section id="welcome" class="cell">
+                    <h1>Welkom</h1>
+                    Welkom op deze website! Dit is het portfolio voor het vak Client Technology.<br>
+                    Als thema heb ik gekozen voor film aangezien mijn interesse daar ligt. Ik kan erg genieten
+                    van het
+                </section>
+                <section id="collection" class="cell">
+                    <h1>Collectie</h1>
+                    Welkom op deze website! Dit is het portfolio voor het vak Client Technology.<br>
+                    Als thema heb ik gekozen voor film aangezien mij
+                </section>
+                <section id="reviews" class="cell">
+                    <h1>Reviews</h1>
+                    Welkom op deze website! Dit is het portfolio voor het vak Client Technology.<br>
+                    Als thema heb ik gekozen voor film aangezien mijn interesse daar ligt. Ik kan erg genieten
+                    van het
+                </section>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container clearfix">
+            [footer]
+        </div>
+    </footer>
 </body>
 </html>

@@ -1,0 +1,20 @@
+html,
+body {
+	height: 100%;
+}
+
+body {
+	background: {
+		image: url("../images/background.jpg");
+		size: cover;
+		repeat: no-repeat;
+		position: center center;
+	}
+}
+
+#wrapper, .container {
+	position: relative;
+	max-width: $desktop-width;
+	margin: 0 auto 48px;
+}
+

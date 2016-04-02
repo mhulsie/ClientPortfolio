@@ -1,0 +1,19 @@
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2, h3, h4 {
+	font: {
+		family: 'Raleway', sans-serif;
+		weight: bold;
+	}
+}
+
+.brand-name {
+	font: {
+	 family: 'Raleway', sans-serif;
+	 weight: bold;
+	 size: 38px;
+	}
+	color: $black-text;
+ }

@@ -1,0 +1,37 @@
+#testtabel{
+    border-collapse: collapse;
+}
+
+#testtabel td{
+    border: 1px solid black;
+    padding: 5px;
+}
+
+.goed{
+    background-color: green;
+}
+
+.gedeeltelijk{
+    background-color: orange;
+}
+
+.niet{
+    background-color: red;
+}
+
+.nietgetest{
+    background-color: grey;
+}
+
+.logo{
+    text-align: center;
+}
+
+.logo img{
+    width: 50px;
+}
+
+#legenda td{
+    font-weight: bold;
+    padding: 5px;
+}

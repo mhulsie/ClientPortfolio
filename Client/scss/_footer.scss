@@ -1,0 +1,16 @@
+footer {
+	position: absolute;
+	bottom: 0;
+	height: $footer-height;
+	width: 100%;
+	line-height: $footer-height;
+	background-color: $default-background-color;
+
+	.container {
+		margin-bottom: 0;
+	}
+
+	.center {
+		text-align: center;
+	}
+}

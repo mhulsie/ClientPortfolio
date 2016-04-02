@@ -1,0 +1,30 @@
+header {
+	position: relative;
+	height: auto;
+	background-color: lightblue;
+
+	.brand-name {
+		position: relative;
+		float: left;
+
+		img {
+			position: relative;
+			display: block;
+			float: left;
+			height: $header-height - 10;
+			width: auto;
+		}
+
+		.title {
+			position: relative;
+			display: block;
+			float: right;
+			line-height: $header-height;
+		}
+	}
+	nav {
+		position: relative;
+		float: right;
+
+	}
+}

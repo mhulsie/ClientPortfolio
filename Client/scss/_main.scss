@@ -3,7 +3,7 @@ main {
 	margin-bottom: 20px;
 
 	.container {
-		max-width: $desktop-width + 40;
+		max-width: $desktop-width;
 	}
 	section {
 		position: relative;
@@ -21,27 +21,45 @@ main {
 		}
 	}
 
-	.table {
-		display: table;
-		border-collapse: separate;
-		border-spacing: 20px 0;
+	.left {
+		float: left;
 	}
 
-	.row {
-		display: table-row;
+	.right {
+		float: right;
 	}
 
-	.cell {
-		&:last-child {
-			margin-right: 0;
+	.inline-block {
+		&:first-child {
+			margin-left: 0;
 		}
-
-		display: table-cell;
-		width: 33%;
-		margin-right: 20px;
+		display: inline-block;
+		margin-left: 20px;
+		vertical-align: top;
 	}
 
-	.cell + .cell {
-		border-spacing: 10px;
-	}
+	//.table {
+	//	display: table;
+	//	border-collapse: separate;
+	//	border-spacing: 20px 0;
+	//}
+	//
+	//.row {
+	//	display: table-row;
+	//}
+	//
+	//.cell {
+	//	&:last-child {
+	//		margin-right: 0;
+	//	}
+	//
+	//	display: table-cell;
+	//	width: 33%;
+	//	margin-right: 20px;
+	//	vertical-align: top;
+	//}
+	//
+	//.cell + .cell {
+	//	border-spacing: 10px;
+	//}
 }

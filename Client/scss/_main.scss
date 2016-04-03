@@ -13,6 +13,12 @@ main {
 		box-sizing: border-box;
 		background-color: $default-background-color;
 		box-shadow: $section-shadow;
+
+		img{
+			width: 200px;
+			display: block;
+			margin: auto;
+		}
 	}
 
 	.table {

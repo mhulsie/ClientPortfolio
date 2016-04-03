@@ -38,6 +38,21 @@ main {
 		vertical-align: top;
 	}
 
+	td{
+		padding: 5px;
+	}
+
+	ul{
+		list-style-type: disc;
+	}
+
+	@media screen and (max-width: 785px){
+		.inline-block{
+			margin-top: 10px;
+			margin-left: 0px;
+		}
+	}
+
 	//.table {
 	//	display: table;
 	//	border-collapse: separate;

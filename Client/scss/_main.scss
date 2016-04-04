@@ -46,9 +46,22 @@ main {
 		list-style-type: disc;
 	}
 
+	.error-empty, .error-email{
+		display: none;
+	}
+
+	.error-empty-show, .error-email-show{
+		display: block;
+		color: red;
+	}
+
+	textarea{
+		resize: none;
+	}
+
 	@media screen and (max-width: 785px){
 		.inline-block{
-			margin-top: 10px;
+			margin-top: 30px;
 			margin-left: 0px;
 		}
 	}

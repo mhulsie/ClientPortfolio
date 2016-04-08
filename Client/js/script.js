@@ -41,5 +41,11 @@ function check(){
 function retrieveName(){
     var firstname = localStorage.firstname;
     var lastname = localStorage.lastname;
+
+    if(localStorage.getItem("firstname") === null){
+        firstname = "niet aanwezig";
+        lastname = "niet aanwezig";
+    }
+
     $('#lastUser').html("<h1>Laatste gebruiker</h1>Voornaam: " + firstname + "<br>Achternaam: " + lastname);
 }

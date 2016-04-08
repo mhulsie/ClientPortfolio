@@ -10,6 +10,10 @@
 
     <script src="js/jquery-2.2.2.min.js" type="text/javascript"></script>
     <script src="js/script.js" type="text/javascript"></script>
+    <script src="js/scriptmoviesapi.js"></script>
+    <script src="js/scriptmapsapi.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDmAKZzEAA6uBOVthi5JjUvMU2J_KRTZIo&libraries=places"
+            async defer></script>
 </head>
 <body>
 <header class="clearfix">
@@ -27,13 +31,13 @@
                     <a href="contact.html">Contact</a>
                 </li>
                 <li>
-                    <a href="">Formulier</a>
+                    <a href="formulier.html">Formulier</a>
                 </li>
                 <li>
                     <a href="game.html">Game</a>
                 </li>
                 <li>
-                    <a href="api.html">API's</a>
+                    <a href="">API's</a>
                 </li>
                 <li>
                     <a href="testtabel.html">Testtabel</a>
@@ -46,23 +50,35 @@
 <main>
     <div class="container clearfix">
         <section class="clearfix">
-            <div class="inline-block">
-                <h2>Plaats een opmerking</h2>
-                <form>
-                    Voornaam:<br>
-                    <input type="text" name="firstname"/><br><br>
-                    Achternaam:<br>
-                    <input type="text" name="lastname"/><br><br>
-                    Email:<br>
-                    <input type="text" name="email"/><br><br>
-                    Opmerking:<br>
-                    <textarea name="comment" cols="40" rows="10"></textarea>
-                </form><br>
-                <span class="error-empty">Vul a.u.b. alle velden in</span><br>
-                <span class="error-email">Vul a.u.b. een geldig email-adres in</span><br>
-                <button onclick="check();" type="button">Opslaan!</button>
-            </div>
-            <div class="inline-block" id="lastUser"></div>
+            <p>
+                <h1>Google Maps / Places</h1>
+                Op de kaart hieronder zijn de bioscopen in de buurt van de huidige locatie weergegeven.
+            </p><br>
+            <div id="map"></div>
+        </section>
+        <section class="clearfix">
+            <table>
+                <tr>
+                    <td><h2>OMDb API</h2></td>
+                </tr>
+                <tr>
+                    <td>Titel:</td>
+                    <td><input type="text" id="searchtitle"></td>
+                    <td><button type="button" id="confirmsearch">Zoek</button></td>
+                </tr>
+                <tr>
+                    <td>Titel:</td>
+                    <td id="title"></td>
+                </tr>
+                <tr>
+                    <td>Jaar:</td>
+                    <td id="year"></td>
+                </tr>
+                <tr>
+                    <td>Regisseur(s):</td>
+                    <td id="director"></td>
+                </tr>
+            </table>
         </section>
     </div>
 </main>

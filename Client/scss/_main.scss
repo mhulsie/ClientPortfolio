@@ -59,6 +59,19 @@ main {
 		resize: none;
 	}
 
+	#gamecanvas{
+		display: block;
+		border: 1px solid #000;
+		margin: auto;
+	}
+
+
+
+	#map{
+		height: 400px;
+	}
+
+
 	@media screen and (max-width: 785px){
 		.inline-block{
 			margin-top: 30px;
@@ -66,28 +79,4 @@ main {
 		}
 	}
 
-	//.table {
-	//	display: table;
-	//	border-collapse: separate;
-	//	border-spacing: 20px 0;
-	//}
-	//
-	//.row {
-	//	display: table-row;
-	//}
-	//
-	//.cell {
-	//	&:last-child {
-	//		margin-right: 0;
-	//	}
-	//
-	//	display: table-cell;
-	//	width: 33%;
-	//	margin-right: 20px;
-	//	vertical-align: top;
-	//}
-	//
-	//.cell + .cell {
-	//	border-spacing: 10px;
-	//}
 }
